@@ -10,23 +10,49 @@
 
 # make it executable with chmod +x memorial.sh
 
+
+
 # needs to run with root privileges
 if [ "$EUID" -ne 0 ]
   then echo "Please run as root: sudo ./memorial.sh"
   exit
 fi
 
-#create initial service files
-python create_service_file.py "source: UNITED for Intercultural Action" > 1.service
-python create_service_file.py unitedagainstracism.org > unitedagainstracism_org.service
+# create initial service file
+echo '<service-group>
+    <name>unitedagainstracism.org</name>
+    <service>
+        <type>_afpovertcp._tcp</type>
+        <port>548</port>
+    </service>
+</service-group>' > /etc/avahi/services/unitedagainstracism_org.service
 
-cp *service /etc/avahi/services/
-sleep 5
+
+count=0
 
 # loop
 while IFS='' read -r line || [[ -n "$line" ]]; do
-    sed -i "2s/.*/<name>$line<\/name>/" /etc/avahi/services/1.service 
-    service avahi-daemon restart
+
+    count=$[$count+1]
+    echo $count
+    
+    # create service file
+    echo '<service-group>
+    <name>'"$line"'</name>
+    <service>
+        <type>_afpovertcp._tcp</type>
+        <port>548</port>
+    </service>
+</service-group>' > /etc/avahi/services/1.service
+
     echo $line
+    date +"%T %D"
+    
+       while [ $count = 5 ]; do # nested loop that runs every 5 times
+          service avahi-daemon restart
+          echo "   restarted avahi ####"
+          count=0
+       done
+       
     sleep 60
 done <List_of_33305_documented_deaths_63char.txt
