@@ -11,7 +11,6 @@
 # make it executable with chmod +x memorial.sh
 
 
-
 # needs to run with root privileges
 if [ "$EUID" -ne 0 ]
   then echo "Please run as root: sudo ./memorial.sh"
@@ -31,28 +30,26 @@ echo '<service-group>
 count=0
 
 # loop
-while IFS='' read -r line || [[ -n "$line" ]]; do
+while true; do #endless
+	while IFS='' read -r line || [[ -n "$line" ]]; do
 
-    count=$[$count+1]
-    echo $count
-    
-    # create service file
-    echo '<service-group>
-    <name>'"$line"'</name>
-    <service>
-        <type>_afpovertcp._tcp</type>
-        <port>548</port>
-    </service>
-</service-group>' > /etc/avahi/services/1.service
+		count=$[$count+1]
+		echo $count
+	
+		echo '<service-group>
+		<name>'"$line"'</name>
+		<service>
+			<type>_afpovertcp._tcp</type>
+			<port>548</port>
+		</service>
+	</service-group>' > /etc/avahi/services/1.service
 
-    echo $line
-    date +"%T %D"
-    
-       while [ $count = 5 ]; do # nested loop that runs every 5 times
-          service avahi-daemon restart
-          echo "   restarted avahi ####"
-          count=0
-       done
-       
-    sleep 60
-done <List_of_33305_documented_deaths_63char.txt
+			   while [ $count = 10 ]; do # 3rd level nested loop runs every 10 times
+			   service avahi-daemon restart
+			   echo "   restarted avahi ####"
+			   count=0
+			   done
+		sleep 60
+	done <List_of_33305_documented_deaths_63char.txt
+	
+done
