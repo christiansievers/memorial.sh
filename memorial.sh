@@ -18,7 +18,9 @@ if [ "$EUID" -ne 0 ]
 fi
 
 # create initial service file
-echo '<service-group>
+echo '<?xml version="1.0" standalone='\'no\''?>
+<!DOCTYPE service-group SYSTEM "avahi-service.dtd">
+<service-group>
     <name>unitedagainstracism.org</name>
     <service>
         <type>_afpovertcp._tcp</type>
@@ -29,14 +31,16 @@ echo '<service-group>
 
 count=0
 
-# loop
-while true; do #endless
-	while IFS='' read -r line || [[ -n "$line" ]]; do
+	# loop
+while true; do
+	while IFS='' read -r line || [[ -n "$line" ]]; do #read lines
 
 		count=$[$count+1]
 		echo $count
 	
-		echo '<service-group>
+		echo '<?xml version="1.0" standalone='\'no\''?>
+		<!DOCTYPE service-group SYSTEM "avahi-service.dtd">
+		<service-group>
 		<name>'"$line"'</name>
 		<service>
 			<type>_afpovertcp._tcp</type>
@@ -44,12 +48,15 @@ while true; do #endless
 		</service>
 	</service-group>' > /etc/avahi/services/1.service
 
+		echo $line
+		date +"%T %D"
+		
 			   while [ $count = 10 ]; do # 3rd level nested loop runs every 10 times
 			   service avahi-daemon restart
 			   echo "   restarted avahi ####"
 			   count=0
 			   done
-		sleep 60
-	done <List_of_33305_documented_deaths_63char.txt
-	
+
+		sleep 30
+	done <List_of_33305_documented_deaths_63bytes.txt 
 done
