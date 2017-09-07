@@ -3,9 +3,9 @@ A network performance as live memorial to those who have died trying to make it 
 
 The "network neighborhood", a functionality built in to all common operating systems, shows you available local network resources. Often the computers are named after whoever uses them, so you can see who is at work, even if it's physically remote from you.
 
-The machines on the network become a kind of placeholder for the people that use them. They're present, and at the same time they're not. It's this 'place', both intimate and abstract, that I would like to populate with the people that have died trying to make it into Europe. As a small, symbolic gesture, the memorial invites those that are not around anymore into these very specific "neighborhoods".
+The machines on the network become a kind of placeholder for the people that use them. They're present, and at the same time they're not. It's this 'place', both intimate and abstract, that the memorial populates with the people that have died trying to make it into Europe. As a small intervention and symbolic gesture, the memorial invites those that are not around anymore into these very specific "neighborhoods".
 
-Even though it's not the only such trail in the world, the route into Europe is the most deadly. By its nature, the exact number of incidents will remain forever unknown. I'm using the list of refugee deaths composed by the Dutch NGO UNITED for Intercultural Action http://www.unitedagainstracism.org/, which seems to be the most reliable database. To date, it consists of 33.305 documented incidents.
+Even though it's not the only such trail in the world, the route into Europe is the most deadly. By its nature, the exact number of incidents will remain forever unknown. The memorial is using the list of refugee deaths composed by the Dutch NGO UNITED for Intercultural Action http://www.unitedagainstracism.org/, which seems to be the most reliable database. As of July 2017 it consists of 3545 documented incidents and 33.305 deaths.
 
 ## Implementation
 
