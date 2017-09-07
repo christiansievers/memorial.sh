@@ -25,3 +25,6 @@ Raspberry Pi board or any Linux machine, connected to local Ethernet and Wifi ne
 ![screenshot mac](memorial_mac.png)
 
 ![screenshot ubuntu](memorial_ubuntu.png)
+
+![screenshot tcpdump](tcpdump.png)
+example network traffic, capture of two minutes
