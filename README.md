@@ -5,7 +5,7 @@ The "network neighborhood", a functionality built in to all common operating sys
 
 The machines on the network become a kind of placeholder for the people that use them. They're present, and at the same time they're not. It's this 'place', both intimate and abstract, that the memorial populates with the people that have died trying to make it into Europe. As a small intervention and symbolic gesture, the memorial invites those that are not around anymore into these very specific "neighborhoods".
 
-Even though it's not the only such trail in the world, the route into Europe is the most deadly. By its nature, the exact number of incidents will remain forever unknown. The memorial is using the list of refugee deaths composed by the Dutch NGO UNITED for Intercultural Action http://www.unitedagainstracism.org/, which seems to be the most reliable database. As of July 2017 it consists of 3545 documented incidents and 33.305 deaths.
+Even though it's not the only such trail in the world, the route into Europe is the most deadly. By its nature, the exact number of incidents will remain forever unknown. The memorial is using the list of refugee deaths composed by the Dutch NGO UNITED for Intercultural Action, which seems to be the most reliable database. As of July 2017 it consists of 3545 documented incidents and 33.305 deaths. An update to the latest official version (June 2018) is going to come shortly. You can find out more about the list here: http://unitedagainstrefugeedeaths.eu. Contact: listofdeaths@unitedagainstracism.org.
 
 ## Implementation
 
@@ -15,7 +15,7 @@ In an exhibition context the memorial should occupy the host institution's local
 
 ## How it works
 
-A simple shell script parses through the list of deaths and advertises each line as a hostname, using Avahi/Zeroconf (Bonjour on Apple's OS). Every minute a new name is set. At this rate it'll take 59 hours to show the entire list of incidents.
+A simple shell script parses through the list of deaths and advertises each line as a hostname, using Avahi/Zeroconf (Bonjour on Mac OS). Every minute a new name is set. At this rate it'll take 59 hours to show the entire list of incidents. Due to technical limitations, only the first 63 characters of each line are shown.
 
 ## Installation requirements
 
