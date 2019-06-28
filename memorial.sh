@@ -12,6 +12,7 @@
 # make it executable with chmod +x memorial.sh
 
 
+
 # needs to run with root privileges
 if [ "$EUID" -ne 0 ]
   then echo "Please run as root: sudo ./memorial.sh"
@@ -27,7 +28,7 @@ echo '<?xml version="1.0" standalone='\'no\''?>
         <type>_afpovertcp._tcp</type>
         <port>548</port>
     </service>
-</service-group>' > /etc/avahi/services/unitedagainstracism_org.service
+</service-group>' > /etc/avahi/services/unitedagainstrefugeedeaths.eu.service
 
 
 count=0
@@ -47,7 +48,7 @@ while true; do
 			<type>_afpovertcp._tcp</type>
 			<port>548</port>
 		</service>
-	</service-group>' > /etc/avahi/services/1.service
+	</service-group>' > /etc/avahi/services/incident.service
 
 		echo $line
 		date +"%T %D"
@@ -58,6 +59,6 @@ while true; do
 			   count=0
 			   done
 
-		sleep 30
+		sleep 60
 	done <List_of_documented_deaths_63bytes.txt 
 done
