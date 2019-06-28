@@ -2,10 +2,11 @@
 
 # memorial.sh
 # v0.1
-# by Christian Sievers 2017 http://christiansievers.info
+# by Christian Sievers 2017-2019 http://christiansievers.info
 
 # A memorial to commemorate those that died trying to make it into Fortress Europe
-# Source: UNITED for Intercultural Action - www.unitedagainstracism.org
+# Source: UNITED for Intercultural Action - http://unitedagainstrefugeedeaths.eu. 
+# Contact: listofdeaths@unitedagainstracism.org
 # -----------------------------------------------------------------------------------
 
 # make it executable with chmod +x memorial.sh
@@ -21,7 +22,7 @@ fi
 echo '<?xml version="1.0" standalone='\'no\''?>
 <!DOCTYPE service-group SYSTEM "avahi-service.dtd">
 <service-group>
-    <name>unitedagainstracism.org</name>
+    <name>www.unitedagainstrefugeedeaths.eu</name>
     <service>
         <type>_afpovertcp._tcp</type>
         <port>548</port>
@@ -58,5 +59,5 @@ while true; do
 			   done
 
 		sleep 30
-	done <List_of_33305_documented_deaths_63bytes.txt 
+	done <List_of_documented_deaths_63bytes.txt 
 done
