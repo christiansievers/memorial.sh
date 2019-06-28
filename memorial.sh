@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # memorial.sh
-# v0.1
+# v0.2
 # by Christian Sievers 2017-2019 http://christiansievers.info
 
 # A memorial to commemorate those that died trying to make it into Fortress Europe
