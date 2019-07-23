@@ -22,7 +22,8 @@ A simple shell script parses through the list of deaths and advertises each line
 Raspberry Pi board or any Linux machine, connected to local Ethernet and Wifi networks. Download the shell script and the list of incidents, and run it with i.e. `sudo bash memorial.sh &`
 
 ## Screenshots
-![screenshot mac](memorial_mac.png)
+![extract of 24 random incidents](memorial_sh_animation.gif)
+an animation showing 24 random incidents, sped up 12x
 
 ![screenshot ubuntu](memorial_ubuntu.png)
 
