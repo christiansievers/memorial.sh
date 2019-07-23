@@ -26,7 +26,7 @@ Raspberry Pi board or any Linux machine, connected to local Ethernet and Wifi ne
 an animation showing 24 random incidents, sped up 12x
 
 ![screenshot ubuntu](memorial_ubuntu.png)
-hosts as the appear i.e. in Ubuntu 
+hosts as they appear i.e. in Ubuntu 
 
 ![screenshot tcpdump](tcpdump.png)
 example network traffic, capture of two minutes
