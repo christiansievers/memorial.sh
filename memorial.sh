@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # memorial.sh
-# v0.2
+# v0.3
 # by Christian Sievers 2017-2019 http://christiansievers.info
 
 # A memorial to commemorate those that died trying to make it into Fortress Europe
@@ -9,7 +9,7 @@
 # Contact: listofdeaths@unitedagainstracism.org
 # -----------------------------------------------------------------------------------
 
-# make it executable with chmod +x memorial.sh
+# see enclosed instructions on how to make it a system service 
 
 
 
@@ -60,5 +60,5 @@ while true; do
 			   done
 
 		sleep 60
-	done <List_of_documented_deaths_63bytes.txt 
+	done </home/pi/memorial.sh/List_of_documented_deaths_63bytes.txt 
 done

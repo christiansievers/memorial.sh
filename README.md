@@ -19,14 +19,19 @@ A simple shell script parses through the list of deaths and advertises each line
 
 ## Installation requirements
 
-Raspberry Pi board or any Linux machine, connected to local Ethernet and Wifi networks. Download the shell script and the list of incidents, and run it with i.e. `sudo bash memorial.sh &`
+Raspberry Pi board or any Linux machine, connected to local Ethernet and Wifi networks. Download the shell script and the list of incidents with `git clone https://github.com/christiansievers/memorial.sh`, and run it with i.e. `sudo bash memorial.sh &`
+This won't persist after a reboot, so once confirmed that it works, [make it run as a system service](how_to_make_run_as_system_service.md) , so it can run endlessly, even after power cuts, crashes, etc.
+
+## Coming up: 
+
+Fully configured Raspberry Pi disk image for easier deployment, for those who don't have the time or the desire or the means to learn to set things up themselves. 
 
 ## Screenshots
-![extract of 24 random incidents](memorial_sh_animation.gif)  
-an animation showing 24 random incidents, sped up 12x
+
+![screenshot mac](memorial_mac.png)
 
 ![screenshot ubuntu](memorial_ubuntu.png)
-hosts as they appear i.e. in Ubuntu 
 
 ![screenshot tcpdump](tcpdump.png)
 example network traffic, capture of two minutes
+
