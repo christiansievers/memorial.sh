@@ -26,15 +26,15 @@ The easiest way to get it running is to use the fully configured [Raspberry Pi d
 
 ## Contact
 
-[Let me know](christiansievers.info/html/contact.html) if you'd like to have the memorial performed in your local network. I'd be happy to assist.
+[Let me know](https://christiansievers.info/html/contact.html) if you'd like to have the memorial performed in your local network. I'd be happy to assist.
 
 
 ## Screenshots
 
-![extract of 24 random incidents](memorial_sh_animation.gif)
+![extract of 24 random incidents](memorial_sh_animation.gif)  
 an animation showing 24 random incidents, sped up 12x
 
-![screenshot ubuntu](memorial_ubuntu.png)
+![screenshot ubuntu](memorial_ubuntu.png)  
 hosts as the appear i.e. in Ubuntu
 
 ![screenshot tcpdump](tcpdump.png)
