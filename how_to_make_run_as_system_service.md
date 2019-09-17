@@ -1,13 +1,14 @@
 # Make the script run as a system service
 
-To make sure that the script runs continuously, and restarts automatically after a power failure or system crash, we'll use `systemd` to it run as a system service. First, we're going to define the service that calls the memorial.sh script. The service definition must be in the `/lib/systemd/system` folder:
+To make sure that the script runs continuously, and restarts automatically after a power failure, we'll use `systemd` to it run as a system service. First, we're going to define the service that calls the memorial.sh script. The service definition must be in the `/lib/systemd/system` folder:
 
 ```
 cd /lib/systemd/system/
 sudo nano memorial.service
 ```
 
-Our service is going to be called `memorial.service` (copy and paste into the nano editor):
+Our service is going to be called `memorial.service` (how fitting, I know) 
+(copy and paste into the nano editor):
 ```
 [Unit]
 Description=making sure memorial.sh is constantly running
@@ -37,4 +38,4 @@ To check the status of the new service, run
 ```
 sudo systemctl status memorial.service
 ```
-Reboot with `sudo reboot` and run the last line again, to check that it's working as expected. You can also watch the script iterate through the line of incidents in real time with `tail -f /var/log/syslog`.
+Reboot with `sudo reboot` and run the last line again, to check that it's working as expected. You can also watch the script iterate through the line of incidents in real time with `sudo journalctl -f -u memorial.service`

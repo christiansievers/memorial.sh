@@ -11,26 +11,31 @@ Even though it's not the only such trail in the world, the route into Europe is 
 
 Anyone can install and run the memorial. As a rule, the list of incidents should not be tampered with. Once started, the memorial should be allowed to display the list at least once in its entirety.
 
-In an exhibition context the memorial should occupy the host institution's local network(s), and its presence should be made known to visitors.
+In an exhibition context the memorial should occupy the host institution's local network(s), and its presence should be made known to visitors. The Raspberry Pi should be placed in an accessible situation and a small screen attached, showing the script iterate through the line of incidents in real time.
 
 ## How it works
 
 A simple shell script parses through the list of deaths and advertises each line as a hostname, using Avahi/Zeroconf (Bonjour on Mac OS). Every minute a new name is set. At this rate it'll take 72 hours to show the entire list of incidents. Due to technical limitations, only the first 63 characters of each line are shown.
 
-## Installation requirements
+## Technical requirements
 
-Raspberry Pi board or any Linux machine, connected to local Ethernet and Wifi networks. Download the shell script and the list of incidents with `git clone https://github.com/christiansievers/memorial.sh`, and run it with i.e. `sudo bash memorial.sh &`
-This won't persist after a reboot, so once confirmed that it works, [make it run as a system service](how_to_make_run_as_system_service.md) , so it can run endlessly, even after power cuts, crashes, etc.
+Ideally run the script on a Raspberry Pi board, or any Linux machine, connected to local Ethernet and Wifi networks. To install, download the shell script and the list of incidents with `git clone https://github.com/christiansievers/memorial.sh`, and run it with i.e. `sudo bash memorial.sh &`
+This won't persist after a reboot, so once confirmed that it works, [make it run as a system service](how_to_make_run_as_system_service.md), so it can perform continuously.
 
-## Coming up: 
+The easiest way to get it running is to use the fully configured [Raspberry Pi disk image](raspberry_pi_disk_image.md) - for those who don't have the time or the desire or the means to set things up themselves. 
 
-Fully configured Raspberry Pi disk image for easier deployment, for those who don't have the time or the desire or the means to learn to set things up themselves. 
+## Contact
+
+[Let me know](christiansievers.info/html/contact.html) if you'd like to have the memorial performed in your local network. I'd be happy to assist.
+
 
 ## Screenshots
 
-![screenshot mac](memorial_mac.png)
+![extract of 24 random incidents](memorial_sh_animation.gif)
+an animation showing 24 random incidents, sped up 12x
 
 ![screenshot ubuntu](memorial_ubuntu.png)
+hosts as the appear i.e. in Ubuntu
 
 ![screenshot tcpdump](tcpdump.png)
 example network traffic, capture of two minutes

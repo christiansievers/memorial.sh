@@ -38,7 +38,7 @@ while true; do
 	while IFS='' read -r line || [[ -n "$line" ]]; do #read lines
 
 		count=$[$count+1]
-		echo $count
+#		echo $count
 	
 		echo '<?xml version="1.0" standalone='\'no\''?>
 		<!DOCTYPE service-group SYSTEM "avahi-service.dtd">
@@ -55,7 +55,7 @@ while true; do
 		
 			   while [ $count = 10 ]; do # 3rd level nested loop runs every 10 times
 			   service avahi-daemon restart
-			   echo "   restarted avahi ####"
+#			   echo "   restarted avahi ####"
 			   count=0
 			   done
 
