@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # memorial.sh
-# v0.3
+# v0.4
 # by Christian Sievers 2017-2019 http://christiansievers.info
 
 # A memorial to commemorate those that died trying to make it into Fortress Europe
@@ -29,6 +29,19 @@ echo '<?xml version="1.0" standalone='\'no\''?>
         <port>548</port>
     </service>
 </service-group>' > /etc/avahi/services/unitedagainstrefugeedeaths.eu.service
+
+
+# create 2nd initial service file
+echo '<?xml version="1.0" standalone='\'no\''?>
+<!DOCTYPE service-group SYSTEM "avahi-service.dtd">
+<service-group>
+    <name>www.memorial.sh</name>
+    <service>
+        <type>_afpovertcp._tcp</type>
+        <port>548</port>
+    </service>
+</service-group>' > /etc/avahi/services/memorial.sh.service
+
 
 
 count=0

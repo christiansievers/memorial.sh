@@ -1,6 +1,6 @@
 # memorial.sh Raspberry Pi disk image
 
-If you would rather not install the script yourself, here's a fully configured disk image that works with any Raspberry Pi: [memorial_sh_v03.zip](https://christiansievers.info/files/memorial_sh_v03.zip) (540MB .zip file)
+If you would rather not install the script yourself, here's a fully configured disk image that works with any Raspberry Pi: [memorial_sh_v04.zip](https://christiansievers.info/files/memorial_sh_v04.zip) (540MB .zip file)
 
 ## What is this?
 
@@ -8,7 +8,7 @@ It's a ready-to run clone of an SD card, the "hard drive" that a Raspberry Pi bo
 
 ## How do I get it running?
 
-All that is left to do is to clone the disk image back to a fresh SD card, following i.e. [these instructions](https://www.raspberrypi.org/documentation/installation/installing-images/README.md). Then plug the Raspberry into your local Ethernet network. If you want it to show what it's doing, connect it to a screen, but that's optional. Then connect it to power, and leave it running. That's literally it. 
+Clone the disk image back to a fresh SD card, following i.e. [these instructions](https://www.raspberrypi.org/documentation/installation/installing-images/README.md). Then plug the Raspberry into your local Ethernet network. If you want it to show what it's doing, connect it to a screen, but that's optional. Then connect it to power, and leave it running. That's literally it. 
 
 
 ### Some technical details
