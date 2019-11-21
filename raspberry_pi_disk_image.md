@@ -25,6 +25,8 @@ Password `memorial`
 User `root`
 Password `memorial`
 
+Once up and running, make sure to change the password via  `sudo dietpi-config` (the usual  `sudo passwd` won't work persistently on DietPi ).  
+
 ### Getting it to run on Wifi, too
 
 The DietPi distribution comes with a few ways to easily set up Wifi. One involves connecting the SD card to your computer and editing some .txt files BEFORE you boot up for the first time. See [here](https://dietpi.com/phpbb/viewtopic.php?t=9) for instructions. 
