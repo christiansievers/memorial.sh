@@ -37,6 +37,9 @@ an animation showing 24 random incidents, sped up 12x
 ![screenshot ubuntu](memorial_ubuntu.png)  
 hosts as the appear i.e. in Ubuntu
 
+![installation using a Raspberry Pi](raspberry2_case_10.jpg)
+installation using a Raspberry Pi with a 3.5" display
+
 ![screenshot tcpdump](tcpdump.png)
 example network traffic, capture of two minutes
 
