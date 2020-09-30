@@ -1,12 +1,14 @@
 #!/bin/bash
 
 # memorial.sh
-# v0.4
-# by Christian Sievers 2017-2019 http://christiansievers.info
+# v0.5 using the 2020 List
 
 # A memorial to commemorate those that died trying to make it into Fortress Europe
 # Source: UNITED for Intercultural Action - http://unitedagainstrefugeedeaths.eu. 
 # Contact: listofdeaths@unitedagainstracism.org
+
+# by Christian Sievers http://christiansievers.info
+
 # -----------------------------------------------------------------------------------
 
 # see enclosed instructions on how to make it a system service 

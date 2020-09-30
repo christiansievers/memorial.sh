@@ -1,6 +1,6 @@
 # memorial.sh Raspberry Pi disk image
 
-If you would rather not install the script yourself, here's a fully configured disk image that works with any Raspberry Pi: [memorial_sh_v04.zip](https://christiansievers.info/files/memorial_sh_v04.zip) (540MB .zip file)
+If you would rather not install the script yourself, here's a fully configured disk image that works with any Raspberry Pi: [memorial_sh_v05.zip](https://christiansievers.info/files/memorial_sh_v05.zip) (540MB .zip file)
 
 ## What is this?
 
@@ -13,7 +13,7 @@ Clone the disk image back to a fresh SD card, following i.e. [these instructions
 
 ### Some technical details
 
-The disk image is based on version v6.25.3 of [DietPi](https://dietpi.com/), a stripped-down Linux distribution for the Raspberry. It's tested to run on all versions of the Raspberry Pi, including the 4.
+The disk image is based on version v6.32 (31/08/2020) of [DietPi](https://dietpi.com/), a stripped-down Linux distribution for the Raspberry. It's tested to run on all versions of the Raspberry Pi, including the 4.
 
 Because the memorial script works using basic networking technology, I only had to install a few more required packages (`avahi-daemon` and `git`). The hostname is `memorial.local`, so use `ping memorial.local` to find out its IP address. 
 
@@ -25,7 +25,7 @@ Password `memorial`
 User `root`
 Password `memorial`
 
-Once up and running, make sure to change the password via  `sudo dietpi-config` (the usual  `sudo passwd` won't work persistently on DietPi ).  
+Once up and running, make sure to change the password via  `sudo dietpi-config` (the usual `sudo passwd` won't work persistently on DietPi ).  
 
 ### Getting it to run on Wifi, too
 
