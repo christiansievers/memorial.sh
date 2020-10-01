@@ -1,6 +1,6 @@
 # Make the script run as a system service
 
-Once you know [how to run it](Readme.md), it's a good idea to make sure that the script runs continuously, and restarts automatically after a power failure. To do that, we'll use `systemd` to run it as a system service. First, we're going to define the service that calls the memorial.sh script. The service definition must be in the `/lib/systemd/system` folder:
+Once you know [how to start it](Readme.md), it's a good idea to make sure that the script runs continuously, and restarts automatically after a power failure. To do that, we'll use `systemd` to run it as a system service. First, we're going to define the service that calls the memorial.sh script. The service definition must be in the `/lib/systemd/system` folder:
 
 ```
 cd /lib/systemd/system/

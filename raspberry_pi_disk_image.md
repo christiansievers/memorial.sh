@@ -15,7 +15,7 @@ Clone the disk image back to a fresh SD card, following i.e. [these instructions
 
 The disk image is based on version v6.32 (31/08/2020) of [DietPi](https://dietpi.com/), a stripped-down Linux distribution for the Raspberry. It's tested to run on all versions of the Raspberry Pi, including the 4.
 
-Because the memorial script works using basic networking technology, I only had to install a few more required packages (`avahi-daemon` and `git`). The hostname is `memorial.local`, so use `ping memorial.local` to find out its IP address. 
+Because the memorial script works using basic networking technology, I only had to install a few more required packages (`avahi-daemon` and `git`). The hostname is `memorial`, so use `ping memorial` or `ping memorial.local` to find out its IP address. 
 
 To see what's going on under the hood, feel free to log in with these details:
 
@@ -25,10 +25,8 @@ Password `memorial`
 User `root`
 Password `memorial`
 
-Once up and running, make sure to change the password via  `sudo dietpi-config` (the usual `sudo passwd` won't work persistently on DietPi ).  
+Once up and running, make sure to change the password via  `sudo dietpi-config` (the usual `sudo passwd` won't work persistently on DietPi ). Do this especially if you plan to keep it running for a long time.
 
 ### Getting it to run on Wifi, too
 
-The DietPi distribution comes with a few ways to easily set up Wifi. One involves connecting the SD card to your computer and editing some .txt files BEFORE you boot up for the first time. See [here](https://dietpi.com/phpbb/viewtopic.php?t=9) for instructions. 
-
-If the system is already running, log in with the above credentials, and use `sudo dietpi-config` to set up Wifi.
+The DietPi distribution comes with a few ways to easily set up Wifi. Log in with the above credentials, and use `sudo dietpi-config` to set up your connection.
